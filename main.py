@@ -11,7 +11,7 @@ def move_folder(name, root_path):
     path = root_path + "\\" + name
     premiered = read_nfo(path)
     # 拼接目标文件
-    suffix_list = ['.nfo', '.mkv', '.mp4', '-poster.png', '-poster.jpg', '-fanart.jpg', '-fanart.png']
+    suffix_list = ['.nfo', '.mkv', '.mp4', '-poster.png', '-poster.jpg', '-fanart.jpg', '-fanart.png', '-thumb.jpg', '-thumb.png']
     # 使用 os.path.splitext() 分割文件名和扩展名
     base_name, extension = os.path.splitext(name)
 
