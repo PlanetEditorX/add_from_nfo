@@ -67,5 +67,5 @@ print(f"运行目录为：{root_path}")
 folder_list = os.listdir(root_path)
 pattern = r"^(?!\[\d{6}\]).*"
 for folder_item in folder_list:
-    if ('[' in folder_item and ']' in folder_item and os.path.splitext(folder_item)[-1].lower() == '.nfo') and re.match(pattern, folder_item):
+    if os.path.splitext(folder_item)[-1].lower() == '.nfo' and re.match(pattern, folder_item):
         move_folder(folder_item, root_path)
